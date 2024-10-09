@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Cursos</title>
+</head>
+<body>
+
+    <h2>Formulario de Registro de Cursos</h2>
+    <form action="procesar_formulario.php" method="POST">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Campo para el apellido -->
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <!-- Campo para indicar si es tutor -->
+        <label for="tutor">¿Eres tutor? (Sí/No):</label>
+        <input type="text" id="tutor" name="tutor" required><br><br>
+
+        <!-- Checkboxes para las asignaturas que imparte -->
+        <p><strong>¿Qué asignaturas impartes?</strong></p>
+        <input type="checkbox" id="sistemas" name="asignaturas_impartidas[]" value="Sistemas">
+        <label for="sistemas">Sistemas</label><br>
+
+        <input type="checkbox" id="programacion" name="asignaturas_impartidas[]" value="Programación">
+        <label for="programacion">Programación</label><br>
+
+        <input type="checkbox" id="basededatos" name="asignaturas_impartidas[]" value="Base de Datos">
+        <label for="basededatos">Base de Datos</label><br><br>
+
+        <!-- Radio buttons para la asignatura adicional -->
+        <p><strong>¿Qué asignatura adicional deseas impartir?</strong></p>
+        <input type="radio" id="empresas_adicional" name="asignatura_adicional" value="Empresas" required>
+        <label for="empresas_adicional">Empresas</label><br>
+
+        <input type="radio" id="redes_adicional" name="asignatura_adicional" value="Redes">
+        <label for="redes_adicional">Redes</label><br>
+
+        <input type="radio" id="seguridad_adicional" name="asignatura_adicional" value="Seguridad">
+        <label for="seguridad_adicional">Seguridad</label><br><br>
+
+        <!-- Desplegable (dropdown) para seleccionar el grado -->
+        <label for="grado">Selecciona el grado:</label>
+        <select id="grado" name="grado" required>
+            <option value="1er Grado">1er Grado</option>
+            <option value="2do Grado">2do Grado</option>
+            <option value="3er Grado">3er Grado</option>
+        </select><br><br>
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

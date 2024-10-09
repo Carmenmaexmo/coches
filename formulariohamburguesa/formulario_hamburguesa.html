@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Hamburguesas</title>
+</head>
+<body>
+
+    <h2>Formulario de Pedido de Hamburguesas</h2>
+    <form action="procesar_hamburguesa.php" method="POST">
+        <!-- Desplegable para seleccionar tipo de hamburguesa -->
+        <label for="hamburguesa">Selecciona tu hamburguesa:</label>
+        <select id="hamburguesa" name="hamburguesa" required>
+            <option value="Hamburguesa Clásica">Hamburguesa Clásica</option>
+            <option value="Hamburguesa BBQ">Hamburguesa BBQ</option>
+            <option value="Hamburguesa Vegetariana">Hamburguesa Vegetariana</option>
+            <option value="Hamburguesa con Queso">Hamburguesa con Queso</option>
+        </select><br><br>
+
+        <!-- Radio buttons para la opción de entrega -->
+        <p><strong>¿Cómo deseas recibir tu hamburguesa?</strong></p>
+        <input type="radio" id="domicilio" name="entrega" value="Domicilio" required>
+        <label for="domicilio">Domicilio</label><br>
+
+        <input type="radio" id="recoger" name="entrega" value="Recoger">
+        <label for="recoger">Recoger</label><br><br>
+
+        <!-- Checkboxes para los toppings -->
+        <p><strong>Selecciona tus toppings:</strong></p>
+        <input type="checkbox" id="lechuga" name="toppings[]" value="Lechuga">
+        <label for="lechuga">Lechuga</label><br>
+
+        <input type="checkbox" id="tomate" name="toppings[]" value="Tomate">
+        <label for="tomate">Tomate</label><br>
+
+        <input type="checkbox" id="cebolla" name="toppings[]" value="Cebolla">
+        <label for="cebolla">Cebolla</label><br>
+
+        <input type="checkbox" id="queso" name="toppings[]" value="Queso">
+        <label for="queso">Queso</label><br>
+
+        <input type="checkbox" id="bacon" name="toppings[]" value="Bacon">
+        <label for="bacon">Bacon</label><br><br>
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar Pedido">
+    </form>
+
+</body>
+</html>

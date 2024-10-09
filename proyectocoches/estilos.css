@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+li {
+    background-color: #fafafa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li a {
+    background-color: #007bff;  
+    color: white;  
+    border: 2px solid black;  
+    border-radius: 5px; 
+    text-decoration: none;  
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+    padding: 5px;
+}
+
+li a:hover {
+    background-color: #0056b3;  
+    transform: translateY(-2px);  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #0056b3;
+}
+
+form.logout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form.logout input[type="submit"] {
+    background-color: #dc3545;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form.logout input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+form input[type="submit"]{
+    padding: 10px 20px;  
+    background-color: #007bff; 
+    color: white;  
+    border: 2px solid black;  
+    border-radius: 5px; 
+    text-decoration: none;  
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;  
+    transform: translateY(-2px);  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+
